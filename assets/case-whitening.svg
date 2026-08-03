@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" width="600" height="440" role="img" aria-label="Shade guide showing teeth moving from a yellow shade to a bright white shade">
+  <defs>
+    <linearGradient id="wbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A2029"/>
+      <stop offset="1" stop-color="#0B0E12"/>
+    </linearGradient>
+    <radialGradient id="wglow" cx="76%" cy="30%" r="62%">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="440" fill="url(#wbg)"/>
+  <rect width="600" height="440" fill="url(#wglow)"/>
+
+  <!-- shade guide: six tabs, darkest to brightest -->
+  <g>
+    <g transform="translate(60 130)">
+      <path d="M0 0h56c6 0 10 4 10 10v92c0 24-12 46-38 46S-10 126-10 102V10C-10 4-6 0 0 0z" fill="#A8905C"/>
+    </g>
+    <g transform="translate(150 122)">
+      <path d="M0 0h56c6 0 10 4 10 10v100c0 26-12 50-38 50s-38-24-38-50V10C-10 4-6 0 0 0z" fill="#BCA871"/>
+    </g>
+    <g transform="translate(240 114)">
+      <path d="M0 0h56c6 0 10 4 10 10v108c0 28-12 54-38 54s-38-26-38-54V10C-10 4-6 0 0 0z" fill="#D2C39A"/>
+    </g>
+    <g transform="translate(330 114)">
+      <path d="M0 0h56c6 0 10 4 10 10v108c0 28-12 54-38 54s-38-26-38-54V10C-10 4-6 0 0 0z" fill="#E4DCC6"/>
+    </g>
+    <g transform="translate(420 122)">
+      <path d="M0 0h56c6 0 10 4 10 10v100c0 26-12 50-38 50s-38-24-38-50V10C-10 4-6 0 0 0z" fill="#F3EFE4"/>
+    </g>
+    <g transform="translate(505 130)">
+      <path d="M0 0h50c6 0 10 4 10 10v92c0 24-12 46-35 46s-35-22-35-46V10C-10 4-6 0 0 0z" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- shade scale rule -->
+  <line x1="50" y1="330" x2="550" y2="330" stroke="#D4AF37" stroke-opacity=".35" stroke-width="1"/>
+  <g fill="#D4AF37" font-family="Jost, sans-serif" font-size="15" letter-spacing="3">
+    <text x="50"  y="358" opacity=".7">A3.5</text>
+    <text x="505" y="358" opacity=".7">BL1</text>
+  </g>
+  <path d="M50 330 L58 324 L58 336 Z" fill="#D4AF37" opacity=".7"/>
+  <path d="M550 330 L542 324 L542 336 Z" fill="#D4AF37" opacity=".7"/>
+</svg>

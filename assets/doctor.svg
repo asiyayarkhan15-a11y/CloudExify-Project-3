@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="420" height="420" role="img" aria-label="Illustrated portrait of Dr. Sana Aurangzeb in a clinical coat">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#20262F"/>
+      <stop offset="1" stop-color="#0D1015"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2F0EA"/>
+      <stop offset="1" stop-color="#C9C6BE"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C09A73"/>
+      <stop offset="1" stop-color="#9E7A55"/>
+    </linearGradient>
+    <linearGradient id="scarf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B424C"/>
+      <stop offset="1" stop-color="#232830"/>
+    </linearGradient>
+    <clipPath id="dclip"><circle cx="210" cy="210" r="210"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#dclip)">
+    <rect width="420" height="420" fill="url(#dbg)"/>
+    <circle cx="210" cy="150" r="160" fill="#D4AF37" fill-opacity=".07"/>
+
+    <!-- shoulders / clinical coat -->
+    <path d="M210 250c78 0 132 42 148 96 6 20 8 46 8 74H54c0-28 2-54 8-74 16-54 70-96 148-96z" fill="url(#coat)"/>
+
+    <!-- coat lapels -->
+    <path d="M210 250l-46 22 30 148h-34l-24-140z" fill="#DFDCD4"/>
+    <path d="M210 250l46 22-30 148h34l24-140z" fill="#DFDCD4"/>
+
+    <!-- scarf / neckline -->
+    <path d="M210 236c-30 0-54 10-54 26 0 22 24 34 54 34s54-12 54-34c0-16-24-26-54-26z" fill="url(#scarf)"/>
+
+    <!-- neck -->
+    <path d="M186 200h48v46c0 12-48 12-48 0z" fill="#9E7A55"/>
+
+    <!-- head -->
+    <ellipse cx="210" cy="152" rx="62" ry="72" fill="url(#skin)"/>
+
+    <!-- hair, tied back -->
+    <path d="M210 74c40 0 66 26 66 62 0 10-2 18-4 24-4-30-16-44-30-48-16-4-42 2-62-6-6 22-14 32-18 54-4-8-6-16-6-24 0-36 14-62 54-62z" fill="#26211E"/>
+
+    <!-- brow + eye suggestion, kept minimal -->
+    <g fill="#4A382A" opacity=".85">
+      <ellipse cx="188" cy="150" rx="7" ry="4"/>
+      <ellipse cx="232" cy="150" rx="7" ry="4"/>
+    </g>
+    <path d="M196 182q14 10 28 0" fill="none" stroke="#7A5A3E" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+
+    <!-- name badge -->
+    <rect x="248" y="330" width="58" height="22" rx="4" fill="#D4AF37" fill-opacity=".85"/>
+    <rect x="253" y="337" width="34" height="3" rx="1.5" fill="#1A1405" fill-opacity=".55"/>
+    <rect x="253" y="344" width="22" height="3" rx="1.5" fill="#1A1405" fill-opacity=".35"/>
+  </g>
+
+  <circle cx="210" cy="210" r="209" fill="none" stroke="#D4AF37" stroke-opacity=".35" stroke-width="2"/>
+</svg>

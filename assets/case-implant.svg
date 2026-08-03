@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" width="600" height="440" role="img" aria-label="Cross-section of a single front-tooth implant with crown and titanium fixture">
+  <defs>
+    <linearGradient id="ibg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A2029"/>
+      <stop offset="1" stop-color="#0B0E12"/>
+    </linearGradient>
+    <radialGradient id="iglow" cx="50%" cy="30%" r="58%">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDEAE1"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#8C8F96"/>
+      <stop offset=".45" stop-color="#D8DBE1"/>
+      <stop offset="1"   stop-color="#7C7F86"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="440" fill="url(#ibg)"/>
+  <rect width="600" height="440" fill="url(#iglow)"/>
+
+  <!-- bone / gum band -->
+  <rect x="60" y="212" width="480" height="150" rx="18" fill="#7C4048" fill-opacity=".22"/>
+  <line x1="60" y1="212" x2="540" y2="212" stroke="#D4AF37" stroke-opacity=".28" stroke-width="1"/>
+
+  <!-- neighbouring teeth -->
+  <g fill="url(#crown)" opacity=".55">
+    <rect x="150" y="112" width="56" height="96" rx="10"/>
+    <rect x="394" y="112" width="56" height="96" rx="10"/>
+  </g>
+
+  <!-- implant crown -->
+  <rect x="262" y="92" width="76" height="118" rx="12" fill="url(#crown)"/>
+
+  <!-- abutment -->
+  <path d="M282 210 h36 l-5 34 h-26 z" fill="url(#metal)"/>
+
+  <!-- titanium fixture with thread lines -->
+  <path d="M278 244 h44 l-7 96 c-2 16-28 16-30 0 z" fill="url(#metal)"/>
+  <g stroke="#5F636A" stroke-width="2" stroke-opacity=".7">
+    <line x1="280" y1="262" x2="320" y2="258"/>
+    <line x1="282" y1="282" x2="318" y2="278"/>
+    <line x1="284" y1="302" x2="316" y2="298"/>
+    <line x1="287" y1="322" x2="313" y2="318"/>
+  </g>
+
+  <!-- callout -->
+  <line x1="338" y1="290" x2="452" y2="290" stroke="#D4AF37" stroke-opacity=".45" stroke-width="1"/>
+  <circle cx="338" cy="290" r="3" fill="#D4AF37" fill-opacity=".8"/>
+  <text x="462" y="286" fill="#D4AF37" fill-opacity=".8" font-family="Jost, sans-serif" font-size="15" letter-spacing="2">Ti</text>
+  <text x="462" y="306" fill="#8D9098" font-family="Jost, sans-serif" font-size="12" letter-spacing="2">grade 4</text>
+</svg>

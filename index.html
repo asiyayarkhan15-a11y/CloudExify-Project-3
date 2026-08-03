@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurelia Dental Studio — a private, appointment-only dental practice in Lahore offering cosmetic dentistry, implants and clear aligners in a calm, unhurried setting.">
+  <meta name="theme-color" content="#0B0D10">
+  <title>Aurelia Dental Studio — Private Dental Care, Lahore</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <img src="assets/logo.svg" alt="" width="34" height="34" class="brand-mark">
+      <span class="brand-text">
+        <span class="brand-name">Aurelia</span>
+        <span class="brand-sub">Dental Studio</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <button class="btn btn-gold btn-sm w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            Book Appointment
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="container position-relative">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <p class="eyebrow reveal-up" style="--d:0ms">
+          <span class="eyebrow-line"></span> Private practice · Est. 2011 · Lahore
+        </p>
+
+        <h1 class="hero-title reveal-up" style="--d:120ms">
+          Dentistry that treats you<br>
+          like a <em>guest</em>, not a <em>queue</em>.
+        </h1>
+
+        <p class="hero-lead reveal-up" style="--d:240ms">
+          One patient at a time. Ninety-minute appointments. A single senior clinician
+          from consultation to final polish — because good dentistry is mostly patience,
+          and patience cannot be rushed through a waiting room.
+        </p>
+
+        <div class="hero-actions reveal-up" style="--d:360ms">
+          <button class="btn btn-gold btn-lg" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            <i class="bi bi-calendar2-check me-2"></i>Book Appointment
+          </button>
+          <a href="#services" class="btn btn-ghost btn-lg">
+            View Services <i class="bi bi-arrow-down-right ms-2"></i>
+          </a>
+        </div>
+
+        <ul class="hero-assurances reveal-up" style="--d:480ms">
+          <li><i class="bi bi-check2"></i> No hidden charges — quoted before we begin</li>
+          <li><i class="bi bi-check2"></i> Same-week emergency slots held daily</li>
+          <li><i class="bi bi-check2"></i> Sedation available for anxious patients</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="hero-card reveal-up" style="--d:420ms">
+          <div class="hero-card-top">
+            <span class="dot-live"></span>
+            <span>Today's availability</span>
+          </div>
+
+          <div class="hero-slots">
+            <button class="slot-preview" data-bs-toggle="modal" data-bs-target="#bookingModal">09:30 <small>AM</small></button>
+            <button class="slot-preview" data-bs-toggle="modal" data-bs-target="#bookingModal">11:00 <small>AM</small></button>
+            <button class="slot-preview is-gone" disabled>01:30 <small>PM</small></button>
+            <button class="slot-preview" data-bs-toggle="modal" data-bs-target="#bookingModal">04:00 <small>PM</small></button>
+          </div>
+
+          <p class="hero-card-note">
+            <i class="bi bi-info-circle"></i>
+            We hold the last slot of each day for emergencies. If you are in pain, call us —
+            we will find you a place.
+          </p>
+
+          <a href="tel:+923001234567" class="hero-card-phone">
+            <i class="bi bi-telephone-outbound"></i> +92 300 123 4567
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#stats" class="scroll-cue" aria-label="Scroll down">
+    <span class="scroll-cue-line"></span>
+  </a>
+</header>
+
+<!-- ============ STATS (SIGNATURE FEATURE 1) ============ -->
+<section class="stats-band" id="stats">
+  <div class="container">
+    <div class="row text-center g-4">
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-item">
+          <div class="stat" data-target="500" data-suffix="+">0</div>
+          <p class="stat-label">Patients treated</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-item">
+          <div class="stat" data-target="15" data-suffix="+">0</div>
+          <p class="stat-label">Years of practice</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-item">
+          <div class="stat" data-target="98" data-suffix="%">0</div>
+          <p class="stat-label">Would recommend us</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-item">
+          <div class="stat" data-target="12" data-suffix="">0</div>
+          <p class="stat-label">Specialists on call</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES (SIGNATURE FEATURE 2 — LIVE FILTER) ============ -->
+<section class="section" id="services">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-line"></span> What we do</p>
+      <h2 class="section-title">Treatments, explained in plain language</h2>
+      <p class="section-sub">
+        No procedure gets booked here until you can describe it back to us in your own words.
+        Filter by what you are actually looking for.
+      </p>
+    </div>
+
+    <div class="filter-bar" role="group" aria-label="Filter services by category">
+      <button class="filter-btn is-active" data-filter="all">All treatments</button>
+      <button class="filter-btn" data-filter="general">General</button>
+      <button class="filter-btn" data-filter="cosmetic">Cosmetic</button>
+      <button class="filter-btn" data-filter="orthodontics">Orthodontics</button>
+    </div>
+
+    <div class="row g-4" id="servicesGrid">
+
+      <div class="col-md-6 col-lg-4 service-col" data-category="general">
+        <article class="service-card">
+          <div class="service-icon"><i class="bi bi-droplet-half"></i></div>
+          <h3>General Cleaning</h3>
+          <p>
+            Ultrasonic scaling and air-polish that lifts stain without stripping enamel.
+            Most patients leave in forty minutes with a hygiene plan they can actually keep.
+          </p>
+          <span class="service-meta">40 min · from PKR 6,000</span>
+          <a href="#contact" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-col" data-category="cosmetic">
+        <article class="service-card">
+          <div class="service-icon"><i class="bi bi-brightness-high"></i></div>
+          <h3>Teeth Whitening</h3>
+          <p>
+            In-chair Zoom whitening with a desensitising pre-treatment, plus custom trays
+            to take home. Shade-matched against your eye whites so the result stays believable.
+          </p>
+          <span class="service-meta">90 min · from PKR 22,000</span>
+          <a href="#contact" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-col" data-category="orthodontics">
+        <article class="service-card">
+          <div class="service-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+          <h3>Braces &amp; Aligners</h3>
+          <p>
+            Ceramic brackets or clear aligners, planned on a 3D scan you can see before
+            you commit. Average adult case closes in eleven to fourteen months.
+          </p>
+          <span class="service-meta">11–14 months · from PKR 180,000</span>
+          <a href="#contact" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-col" data-category="general">
+        <article class="service-card">
+          <div class="service-icon"><i class="bi bi-shield-plus"></i></div>
+          <h3>Root Canal Therapy</h3>
+          <p>
+            Single-visit endodontics under magnification with rotary files. The tooth you
+            arrived with is the tooth you leave with — sealed, sedated and pain-free.
+          </p>
+          <span class="service-meta">Single visit · from PKR 25,000</span>
+          <a href="#contact" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-col" data-category="general cosmetic">
+        <article class="service-card">
+          <div class="service-icon"><i class="bi bi-gem"></i></div>
+          <h3>Dental Implants</h3>
+          <p>
+            Titanium implants placed from a CBCT-guided surgical stent, restored with a
+            zirconia crown. Ten-year written warranty on the fixture, in writing, on paper.
+          </p>
+          <span class="service-meta">3–5 months · from PKR 165,000</span>
+          <a href="#contact" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 service-col" data-category="cosmetic">
+        <article class="service-card">
+          <div class="service-icon"><i class="bi bi-stars"></i></div>
+          <h3>Cosmetic Dentistry</h3>
+          <p>
+            Porcelain veneers and edge bonding, previewed as a wax mock-up you wear for a
+            week first. You approve the smile before a single tooth is prepared.
+          </p>
+          <span class="service-meta">2–3 visits · from PKR 95,000</span>
+          <a href="#contact" class="service-link">Learn more <i class="bi bi-arrow-right"></i></a>
+        </article>
+      </div>
+
+    </div>
+
+    <p class="filter-empty d-none" id="filterEmpty">No treatments in this category yet.</p>
+  </div>
+</section>
+
+<!-- ============ BEFORE & AFTER (SIGNATURE FEATURE 3 — DRAGGABLE SLIDER) ============ -->
+<section class="section section-alt" id="results">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-line"></span> Case work</p>
+      <h2 class="section-title">Before &amp; after, undoctored</h2>
+      <p class="section-sub">
+        Same camera, same light, same retractor. Drag the divider to compare — every case
+        below is a real treatment plan our patients agreed to publish.
+      </p>
+    </div>
+
+    <!-- Draggable comparison slider -->
+    <div class="compare-wrap">
+      <div class="compare" id="compare" tabindex="0" role="slider"
+           aria-label="Before and after comparison slider"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+
+        <img src="assets/smile-before.svg" alt="Patient's smile before treatment" class="compare-img" width="1200" height="800">
+
+        <div class="compare-after" id="compareAfter">
+          <img src="assets/smile-after.svg" alt="The same smile after veneers and whitening" class="compare-img" width="1200" height="800">
+        </div>
+
+        <span class="compare-tag compare-tag-before">Before</span>
+        <span class="compare-tag compare-tag-after">After</span>
+
+        <div class="compare-handle" id="compareHandle">
+          <span class="compare-line"></span>
+          <span class="compare-grip"><i class="bi bi-chevron-left"></i><i class="bi bi-chevron-right"></i></span>
+          <span class="compare-line"></span>
+        </div>
+      </div>
+
+      <p class="compare-caption">
+        <strong>Case 07 —</strong> eight upper porcelain veneers with gum re-contouring.
+        Treatment time: 3 weeks. Patient age 34.
+      </p>
+    </div>
+
+    <!-- Hover-overlay gallery -->
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <figure class="gal-item">
+          <img src="assets/case-whitening.svg" alt="Whitening case result" width="600" height="440">
+          <figcaption>
+            <span class="gal-label">Whitening</span>
+            <h4>Six shades in one visit</h4>
+            <p>Tetracycline staining, treated over two in-chair sessions.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="gal-item">
+          <img src="assets/case-aligners.svg" alt="Clear aligner case result" width="600" height="440">
+          <figcaption>
+            <span class="gal-label">Aligners</span>
+            <h4>Closed a 4mm midline gap</h4>
+            <p>Eleven months of clear aligners, no extractions needed.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="gal-item">
+          <img src="assets/case-implant.svg" alt="Dental implant case result" width="600" height="440">
+          <figcaption>
+            <span class="gal-label">Implant</span>
+            <h4>Single front-tooth implant</h4>
+            <p>Immediate temporary the same day, final crown at month four.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <div class="col-lg-7">
+        <p class="eyebrow"><span class="eyebrow-line"></span> The practice</p>
+        <h2 class="section-title text-start">We built the clinic we could not find</h2>
+
+        <p class="about-text">
+          Aurelia began in 2011 in two rented rooms above a pharmacy on Main Boulevard.
+          Dr. Sana Aurangzeb had spent six years in a high-volume hospital department where
+          a molar root canal was allotted twenty-two minutes, and had watched good clinicians
+          become fast ones.
+        </p>
+        <p class="about-text">
+          So the first rule written on the wall here was a scheduling rule, not a clinical one:
+          <em>no appointment shorter than the treatment deserves.</em> Everything else — the
+          microscopes, the CBCT scanner, the ceramist we fly in from Karachi twice a month —
+          followed from having the time to use them properly.
+        </p>
+
+        <div class="values-grid">
+          <div class="value">
+            <i class="bi bi-clock-history"></i>
+            <h4>Unhurried</h4>
+            <p>90-minute slots as standard. We do not double-book chairs.</p>
+          </div>
+          <div class="value">
+            <i class="bi bi-eye"></i>
+            <h4>Transparent</h4>
+            <p>Every quote itemised. If a tooth can be watched, we say so.</p>
+          </div>
+          <div class="value">
+            <i class="bi bi-arrow-repeat"></i>
+            <h4>Accountable</h4>
+            <p>We re-do our own work free within the warranty period.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <aside class="doctor-card">
+          <div class="doctor-portrait">
+            <img src="assets/doctor.svg" alt="Illustrated portrait of Dr. Sana Aurangzeb" width="420" height="420">
+          </div>
+
+          <h3 class="doctor-name">Dr. Sana Aurangzeb</h3>
+          <p class="doctor-role">Founder &amp; Clinical Director · Prosthodontics</p>
+
+          <p class="doctor-quote">
+            &ldquo;A patient who understands the plan almost never abandons it halfway.
+            So I spend the first appointment talking, not drilling.&rdquo;
+          </p>
+
+          <ul class="credentials">
+            <li><i class="bi bi-patch-check-fill"></i> BDS, King Edward Medical University</li>
+            <li><i class="bi bi-patch-check-fill"></i> MSc Prosthodontics, University of Manchester</li>
+            <li><i class="bi bi-patch-check-fill"></i> Fellow, International Congress of Oral Implantologists</li>
+            <li><i class="bi bi-patch-check-fill"></i> PMDC Registered — Reg. 41-2233-D</li>
+            <li><i class="bi bi-award-fill"></i> Pakistan Dental Association — Clinician of the Year, 2023</li>
+          </ul>
+
+          <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            Consult with Dr. Aurangzeb
+          </button>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section section-alt" id="testimonials">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-line"></span> In their words</p>
+      <h2 class="section-title">What patients say when we are not in the room</h2>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel" data-bs-interval="6000">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+              <blockquote class="tcard">
+                <div class="stars" aria-label="5 out of 5 stars"><span></span><span></span><span></span><span></span><span></span></div>
+                <p>I had avoided dentists for nine years. Dr. Sana let me sit in the chair for
+                  the whole first visit without touching a single instrument. That is the only
+                  reason I came back for the second.</p>
+                <footer><strong>Hina Raza</strong><span>Root canal &amp; crown</span></footer>
+              </blockquote>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <blockquote class="tcard">
+                <div class="stars" aria-label="5 out of 5 stars"><span></span><span></span><span></span><span></span><span></span></div>
+                <p>The quote I was given in week one was the amount I paid in month five.
+                  After three clinics that kept discovering new problems, that alone was worth
+                  the difference in price.</p>
+                <footer><strong>Bilal Khan</strong><span>Two dental implants</span></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+              <blockquote class="tcard">
+                <div class="stars" aria-label="5 out of 5 stars"><span></span><span></span><span></span><span></span><span></span></div>
+                <p>They talked me <em>out</em> of veneers. Said my own teeth only needed
+                  whitening and two hours of bonding. Cost them about ninety thousand rupees
+                  to be honest with me.</p>
+                <footer><strong>Ayesha Siddiqui</strong><span>Whitening &amp; edge bonding</span></footer>
+              </blockquote>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <blockquote class="tcard">
+                <div class="stars" aria-label="4 out of 5 stars"><span></span><span></span><span></span><span></span><span class="half"></span></div>
+                <p>Parking on Main Boulevard is genuinely miserable, and that is my only
+                  complaint in fourteen months of aligner reviews. The clinical side has been
+                  faultless.</p>
+                <footer><strong>Usman Tariq</strong><span>Clear aligners</span></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+              <blockquote class="tcard">
+                <div class="stars" aria-label="5 out of 5 stars"><span></span><span></span><span></span><span></span><span></span></div>
+                <p>My daughter is seven and terrified of needles. The nurse spent twenty
+                  minutes showing her the equipment on a toy crocodile first. She asked to go
+                  back the next week.</p>
+                <footer><strong>Fatima Noor</strong><span>Paediatric fillings</span></footer>
+              </blockquote>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <blockquote class="tcard">
+                <div class="stars" aria-label="5 out of 5 stars"><span></span><span></span><span></span><span></span><span></span></div>
+                <p>A veneer chipped at fourteen months, four months past the warranty. They
+                  replaced it anyway and would not take the money. I have sent them six
+                  colleagues since.</p>
+                <footer><strong>Zainab Malik</strong><span>Porcelain veneers</span></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <i class="bi bi-arrow-left"></i><span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <i class="bi bi-arrow-right"></i><span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section" id="pricing">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-line"></span> Membership</p>
+      <h2 class="section-title">Annual care plans</h2>
+      <p class="section-sub">
+        Pay monthly, spread the cost of the boring appointments that prevent the expensive ones.
+        Treatment work is billed separately at the member rate shown.
+      </p>
+    </div>
+
+    <div class="row g-4 align-items-lg-center justify-content-center">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="price-card">
+          <h3 class="price-name">Essential</h3>
+          <p class="price-for">For healthy mouths that just need keeping that way.</p>
+          <div class="price-amount"><span class="cur">PKR</span>2,400<small>/month</small></div>
+          <ul class="price-list">
+            <li><i class="bi bi-check2"></i> 2 hygiene visits a year</li>
+            <li><i class="bi bi-check2"></i> 1 full examination + X-rays</li>
+            <li><i class="bi bi-check2"></i> Oral cancer screening</li>
+            <li><i class="bi bi-check2"></i> 10% off all treatment</li>
+            <li class="off"><i class="bi bi-dash"></i> Emergency cover</li>
+            <li class="off"><i class="bi bi-dash"></i> Whitening top-ups</li>
+          </ul>
+          <button class="btn btn-outline-gold w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Choose Essential</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="price-card price-card-featured">
+          <span class="price-badge">Most Popular</span>
+          <h3 class="price-name">Complete</h3>
+          <p class="price-for">Our standard plan. Nine in ten patients pick this one.</p>
+          <div class="price-amount"><span class="cur">PKR</span>4,900<small>/month</small></div>
+          <ul class="price-list">
+            <li><i class="bi bi-check2"></i> 3 hygiene visits a year</li>
+            <li><i class="bi bi-check2"></i> 2 full examinations + X-rays</li>
+            <li><i class="bi bi-check2"></i> Oral cancer screening</li>
+            <li><i class="bi bi-check2"></i> 20% off all treatment</li>
+            <li><i class="bi bi-check2"></i> 24/7 emergency cover</li>
+            <li class="off"><i class="bi bi-dash"></i> Whitening top-ups</li>
+          </ul>
+          <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Choose Complete</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="price-card">
+          <h3 class="price-name">Signature</h3>
+          <p class="price-for">Cosmetic maintenance for veneer and implant patients.</p>
+          <div class="price-amount"><span class="cur">PKR</span>9,500<small>/month</small></div>
+          <ul class="price-list">
+            <li><i class="bi bi-check2"></i> 4 hygiene visits a year</li>
+            <li><i class="bi bi-check2"></i> 2 examinations + CBCT scan</li>
+            <li><i class="bi bi-check2"></i> Oral cancer screening</li>
+            <li><i class="bi bi-check2"></i> 30% off all treatment</li>
+            <li><i class="bi bi-check2"></i> 24/7 emergency cover</li>
+            <li><i class="bi bi-check2"></i> Annual whitening top-up</li>
+          </ul>
+          <button class="btn btn-outline-gold w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Choose Signature</button>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="price-note">
+      <i class="bi bi-shield-check"></i>
+      Cancel any plan with 30 days' notice. Plans cover prevention, not treatment —
+      we will never sell you a filling you do not need.
+    </p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-line"></span> Before you call</p>
+      <h2 class="section-title">Questions we are asked every week</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="accordion faq-accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                I have not seen a dentist in years. Will I be lectured?
+              </button>
+            </h3>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                No. Roughly a third of our new patients arrive after a gap of five years or more,
+                and every one of them expected a telling-off. Shame is the single biggest reason
+                people delay care, which makes it a clinical problem, not a moral one. We start
+                where you are.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                Does the first appointment include treatment?
+              </button>
+            </h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Only if you are in pain. Otherwise the first visit is 60 minutes of examination,
+                photographs, X-rays and conversation, ending with a written plan and a price.
+                You take that home and decide. There is no pressure to book anything on the day.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                I am genuinely terrified of the drill. What are my options?
+              </button>
+            </h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Three, in order of intensity: topical numbing before the injection so you never
+                feel the needle; oral sedation taken an hour before, which leaves you awake but
+                distant; or IV sedation with our visiting anaesthetist, after which most patients
+                remember nothing of the appointment. Tell us at booking so we can plan the slot.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                How long do veneers and implants actually last?
+              </button>
+            </h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Porcelain veneers: 12–15 years typical, longer if you do not grind. Implant
+                fixtures: 20+ years, with the crown on top usually replaced once in that span.
+                We warranty the fixture for ten years and the veneer for five, and we honour it
+                without an argument.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                Can I pay for treatment in instalments?
+              </button>
+            </h3>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. Anything above PKR 50,000 can be split across 3, 6 or 12 months at zero
+                interest, arranged in-house without a credit check. Larger reconstructive cases
+                can be staged clinically as well as financially, so you pay as each phase completes.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                Do you treat children?
+              </button>
+            </h3>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                From age three. Children's examinations are free for members' families, and we
+                deliberately schedule first visits for late morning, when children are least
+                tired and most curious. Nothing invasive happens on visit one.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                What happens if I have an emergency at 2am?
+              </button>
+            </h3>
+            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Members on Complete and Signature call the same number and reach a clinician,
+                not a call centre. Non-members can still call — we keep the last slot of every
+                working day unbooked precisely for this, and we have never yet turned away
+                someone in real pain.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-line"></span> Find us</p>
+      <h2 class="section-title">Come and see the place first</h2>
+      <p class="section-sub">
+        You are welcome to walk in, look around and leave without booking anything.
+        Tea is on us either way.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-5">
+        <div class="contact-panel">
+
+          <a href="https://maps.google.com/?q=Gulberg+III+Lahore" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-ico"><i class="bi bi-geo-alt"></i></span>
+            <span>
+              <strong>Studio address</strong>
+              42-B Main Boulevard, Gulberg III<br>Lahore 54660, Pakistan
+            </span>
+          </a>
+
+          <a href="tel:+923001234567" class="contact-row">
+            <span class="contact-ico"><i class="bi bi-telephone"></i></span>
+            <span>
+              <strong>Reception</strong>
+              +92 300 123 4567
+            </span>
+          </a>
+
+          <a href="mailto:hello@aureliadental.pk" class="contact-row">
+            <span class="contact-ico"><i class="bi bi-envelope"></i></span>
+            <span>
+              <strong>Email</strong>
+              hello@aureliadental.pk
+            </span>
+          </a>
+
+          <div class="contact-row contact-row-static">
+            <span class="contact-ico"><i class="bi bi-clock"></i></span>
+            <span>
+              <strong>Opening hours</strong>
+              Mon – Fri &nbsp;09:00 – 19:00<br>
+              Saturday &nbsp;&nbsp;10:00 – 16:00<br>
+              Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emergencies only
+            </span>
+          </div>
+
+          <button class="btn btn-gold w-100 mt-2" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            <i class="bi bi-calendar2-check me-2"></i>Book Appointment
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=Gulberg%20III%2C%20Lahore%2C%20Pakistan&output=embed"
+            title="Map showing Aurelia Dental Studio in Gulberg III, Lahore"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+        <a class="footer-brand" href="#home">
+          <img src="assets/logo.svg" alt="" width="34" height="34">
+          <span>
+            <span class="brand-name">Aurelia</span>
+            <span class="brand-sub">Dental Studio</span>
+          </span>
+        </a>
+        <p class="footer-blurb">
+          A private dental practice on Main Boulevard, Lahore. Appointment-only,
+          since 2011.
+        </p>
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/923001234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-head">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h4 class="footer-head">Practice</h4>
+        <ul class="footer-links">
+          <li><a href="#pricing">Care plans</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4">
+        <h4 class="footer-head">In pain right now?</h4>
+        <p class="footer-blurb">
+          Call reception directly. We hold the final slot of every working day
+          for emergencies.
+        </p>
+        <a href="tel:+923001234567" class="btn btn-outline-gold w-100">
+          <i class="bi bi-telephone-outbound me-2"></i>+92 300 123 4567
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> Aurelia Dental Studio. All rights reserved.</p>
+      <p class="footer-fine">
+        A fictional clinic built as CloudExify Web Project 3 · Design &amp; code by
+        <a href="#home">the intern named in the README</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BOOKING MODAL (SIGNATURE FEATURE 4) ============ -->
+<div class="modal fade booking-modal" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <div>
+          <p class="eyebrow mb-1"><span class="eyebrow-line"></span> Reserve a chair</p>
+          <h2 class="modal-title" id="bookingModalLabel">Book your appointment</h2>
+        </div>
+        <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="alert-error d-none" id="formError" role="alert">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <span id="formErrorText">Please complete every required field before continuing.</span>
+        </div>
+
+        <div class="alert-success d-none" id="formSuccess" role="status">
+          <i class="bi bi-check-circle-fill"></i>
+          <div>
+            <strong>Request received.</strong>
+            <span id="successDetail">Reception will call you within one working hour to confirm.</span>
+          </div>
+        </div>
+
+        <form id="appointmentForm" novalidate>
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <label for="patientName" class="form-label">Full name <span class="req">*</span></label>
+              <input type="text" class="form-control" id="patientName" placeholder="e.g. Ayesha Siddiqui" autocomplete="name">
+            </div>
+
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone number <span class="req">*</span></label>
+              <input type="tel" class="form-control" id="phone" placeholder="+92 300 123 4567" autocomplete="tel">
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email <span class="opt">(optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" autocomplete="email">
+            </div>
+
+            <div class="col-md-6">
+              <label for="serviceType" class="form-label">Treatment <span class="req">*</span></label>
+              <select class="form-select" id="serviceType">
+                <option value="">Select a treatment…</option>
+                <option>New patient consultation</option>
+                <option>General cleaning</option>
+                <option>Teeth whitening</option>
+                <option>Braces &amp; aligners</option>
+                <option>Root canal therapy</option>
+                <option>Dental implants</option>
+                <option>Cosmetic dentistry</option>
+                <option>Emergency / in pain</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="apptDate" class="form-label">Preferred date <span class="req">*</span></label>
+              <input type="date" class="form-control" id="apptDate">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Selected slot</label>
+              <div class="slot-readout" id="slotReadout">No time selected yet</div>
+              <input type="hidden" id="apptTime" value="">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label d-block">Preferred time <span class="req">*</span></label>
+              <div class="slot-grid" id="slotGrid" role="group" aria-label="Available time slots">
+                <button type="button" class="slot" data-time="09:00 AM">09:00 AM</button>
+                <button type="button" class="slot" data-time="09:30 AM">09:30 AM</button>
+                <button type="button" class="slot" data-time="10:30 AM">10:30 AM</button>
+                <button type="button" class="slot" data-time="11:00 AM">11:00 AM</button>
+                <button type="button" class="slot is-taken" data-time="12:00 PM" disabled>12:00 PM</button>
+                <button type="button" class="slot" data-time="01:00 PM">01:00 PM</button>
+                <button type="button" class="slot is-taken" data-time="01:30 PM" disabled>01:30 PM</button>
+                <button type="button" class="slot" data-time="03:00 PM">03:00 PM</button>
+                <button type="button" class="slot" data-time="04:00 PM">04:00 PM</button>
+                <button type="button" class="slot" data-time="05:30 PM">05:30 PM</button>
+                <button type="button" class="slot" data-time="06:00 PM">06:00 PM</button>
+                <button type="button" class="slot is-taken" data-time="06:30 PM" disabled>06:30 PM</button>
+              </div>
+              <p class="slot-legend">
+                <span class="key key-free"></span> Available
+                <span class="key key-taken"></span> Already booked
+              </p>
+            </div>
+
+            <div class="col-12">
+              <label for="notes" class="form-label">Anything we should know? <span class="opt">(optional)</span></label>
+              <textarea class="form-control" id="notes" rows="2" placeholder="Nervous patient, allergies, wheelchair access…"></textarea>
+            </div>
+
+          </div>
+
+          <div class="modal-actions">
+            <button type="button" class="btn btn-ghost" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-gold" id="submitBtn">
+              <i class="bi bi-check2 me-2"></i>Confirm request
+            </button>
+          </div>
+
+          <p class="modal-fine">
+            This is a request, not a confirmed booking. Reception calls you back to finalise.
+            No payment is taken online.
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
