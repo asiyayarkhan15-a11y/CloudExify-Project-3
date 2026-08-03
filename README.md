@@ -2,21 +2,16 @@
 
 **CloudExify Summer Internship 2026 · Full Stack Web Development — Month 2, Project 3**
 
-> ⚠️ **Before you submit:** fill in the five bracketed fields in the table below, and drop your
-> two screenshots into `assets/screenshots/`. Everything else is done.
-
----
-
 ## Submission details
 
 | Field | Value |
 |---|---|
-| **Name** | `[YOUR NAME]` |
-| **Registration number** | `[CX-2026-XXXX]` |
+| **Name** | Asiya Khan |
+| **Registration number** | CX-INT-2026-GEN-0481 |
 | **Build track chosen** | **Luxury Dental** — dark premium ground, gold accents, serif display type |
 | **Signature features implemented** | **4** — animated stats counter, live service filter, draggable before/after slider, appointment booking modal with time-slot selector |
-| **Live Vercel link** | `[https://yourname-dental.vercel.app]` |
-| **GitHub repository** | `[https://github.com/yourname/cloudexify-web-p3-yourname]` |
+| **Live Vercel link** | **https://cloud-exify-project-3.vercel.app/** |
+| **GitHub repository** | https://github.com/asiyayarkhan15-a11y/CloudExify-Project-3 |
 
 ---
 
@@ -166,4 +161,4 @@ practice's advertising.
 
 ---
 
-*Built for CloudExify Web Dev Month 2 — Project 3.*
+*Built by Asiya Khan (CX-INT-2026-GEN-0481) for CloudExify Web Dev Month 2 — Project 3.*
