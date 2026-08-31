@@ -17,7 +17,7 @@
 
 ## About the build
 
-Aurelia Dental Studio is a fictional private dental practice in Gulberg III, Lahore. The brief
+Aurelia Dental Studio is a fictional private dental practice in Attock City, Punjab. The brief
 warned against pages that read as unmodified Bootstrap templates, so the visual identity was
 built deliberately rather than inherited:
 
