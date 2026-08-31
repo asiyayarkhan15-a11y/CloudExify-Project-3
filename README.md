@@ -155,19 +155,19 @@ python -m http.server 8000
 
 | Test case | Expected result | Status |
 |---|---|:---:|
-| Live Vercel link opens | Site loads and looks professional | ☐ |
-| Sticky navbar on scroll | Navbar stays fixed, gains a blurred background past 40px | ☐ |
-| Mobile hamburger menu | Opens, closes, and auto-closes after tapping a link | ☐ |
-| All section anchors | Nav links scroll smoothly to the right section | ☐ |
-| Stats counter on scroll | Counts up once when the band enters view | ☐ |
-| Service filter | Cards filter smoothly by category | ☐ |
-| Before/after slider | Divider drags with mouse, touch and arrow keys | ☐ |
-| Appointment modal validation | Empty fields show a specific error, valid input shows success | ☐ |
-| Testimonials | Carousel auto-rotates every 6s, arrows and dots work | ☐ |
-| Pricing | Three plans visible, Complete highlighted with badge | ☐ |
-| FAQ accordion | Opens and closes smoothly, only one open at a time | ☐ |
-| Mobile + desktop | Layout adapts cleanly at both widths | ☐ |
-| Browser console | No JavaScript errors on load | ☐ |
+| Live Vercel link opens | Site loads and looks professional | ☑ |
+| Sticky navbar on scroll | Navbar stays fixed, gains a blurred background past 40px | ☑ |
+| Mobile hamburger menu | Opens, closes, and auto-closes after tapping a link | ☑ |
+| All section anchors | Nav links scroll smoothly to the right section | ☑ |
+| Stats counter on scroll | Counts up once when the band enters view | ☑ |
+| Service filter | Cards filter smoothly by category | ☑ |
+| Before/after slider | Divider drags with mouse, touch and arrow keys | ☑ |
+| Appointment modal validation | Empty fields show a specific error, valid input shows success | ☑ |
+| Testimonials | Carousel auto-rotates every 6s, arrows and dots work | ☑ |
+| Pricing | Three plans visible, Complete highlighted with badge | ☑ |
+| FAQ accordion | Opens and closes smoothly, only one open at a time | ☑ |
+| Mobile + desktop | Layout adapts cleanly at both widths | ☑ |
+| Browser console | No JavaScript errors on load | ☑ |
 
 ---
 
