@@ -1,82 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Stylised illustration of a smile before treatment: uneven, discoloured teeth">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Close-up illustration of the same smile before treatment: crowded, rotated and discoloured teeth with a gap between the front two">
   <defs>
     <linearGradient id="bgB" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#151A21"/>
-      <stop offset="1" stop-color="#0A0C0F"/>
+      <stop offset="0" stop-color="#161B22"/><stop offset="1" stop-color="#090B0E"/>
     </linearGradient>
-    <radialGradient id="glowB" cx="50%" cy="46%" r="52%">
-      <stop offset="0" stop-color="#D4AF37" stop-opacity=".14"/>
+    <radialGradient id="glowB" cx="50%" cy="48%" r="55%">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity=".1"/>
       <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="toothB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0"   stop-color="#B7A473"/>
-      <stop offset=".45" stop-color="#CDBB8C"/>
-      <stop offset="1"   stop-color="#DCCFA8"/>
+
+    <!-- the same enamel structure, shifted several shades down the guide -->
+    <linearGradient id="enamelB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#9C8850"/>
+      <stop offset=".22" stop-color="#C0AC7B"/>
+      <stop offset=".72" stop-color="#D2C393"/>
+      <stop offset=".93" stop-color="#CABB8C"/>
+      <stop offset="1"   stop-color="#BCAC7F"/>
     </linearGradient>
-    <linearGradient id="stainB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0"   stop-color="#6E5B2E" stop-opacity=".55"/>
-      <stop offset=".55" stop-color="#6E5B2E" stop-opacity="0"/>
+    <linearGradient id="enamelBackB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#7E6C40"/>
+      <stop offset=".4"  stop-color="#A08C5C"/>
+      <stop offset="1"   stop-color="#AD9A69"/>
     </linearGradient>
+    <linearGradient id="gumB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#68282F"/><stop offset="1" stop-color="#9C444C"/>
+    </linearGradient>
+    <linearGradient id="tartarB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#5E4A1E" stop-opacity=".62"/>
+      <stop offset="1"   stop-color="#5E4A1E" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lipB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A555C"/><stop offset=".55" stop-color="#6E4048"/><stop offset="1" stop-color="#5A333A"/>
+    </linearGradient>
+    <linearGradient id="lowLipB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5E363D"/><stop offset=".4" stop-color="#8D585F"/><stop offset="1" stop-color="#6B3F46"/>
+    </linearGradient>
+    <radialGradient id="throatB" cx="50%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#3A1218"/><stop offset="1" stop-color="#160709"/>
+    </radialGradient>
+
     <clipPath id="mouthB">
-      <path d="M170 400 Q600 290 1030 400 Q600 610 170 400 Z"/>
+      <path d="M200 430 Q600 242 1000 430 Q600 660 200 430 Z"/>
     </clipPath>
   </defs>
 
   <rect width="1200" height="800" fill="url(#bgB)"/>
   <rect width="1200" height="800" fill="url(#glowB)"/>
 
+  <!-- lips: identical geometry to the after frame so the slider lines up -->
+  <path d="M170 428 C280 340 400 285 520 282 C555 281 578 262 600 262 C622 262 645 281 680 282 C800 285 920 340 1030 428 L1000 430 Q600 242 200 430 Z" fill="url(#lipB)"/>
+  <path d="M1000 430 Q600 660 200 430 C260 560 400 700 600 700 C800 700 940 560 1000 430 Z" fill="url(#lowLipB)"/>
+
   <g clip-path="url(#mouthB)">
-    <!-- mouth interior -->
-    <rect x="150" y="270" width="900" height="360" fill="#200E12"/>
+    <rect x="150" y="240" width="900" height="440" fill="url(#throatB)"/>
 
-    <!-- gum line, slightly inflamed tone -->
-    <path d="M170 400 Q600 290 1030 400 L1030 438 Q600 328 170 438 Z" fill="#7C4048"/>
+    <!-- lower arch first, so upper teeth overlap it correctly -->
+    <g fill="#AD9A69" opacity=".8">
+      <rect x="430" y="516" width="56" height="70" rx="10" transform="rotate(-5 458 551)"/>
+      <rect x="492" y="513" width="52" height="70" rx="10"/>
+      <rect x="544" y="512" width="50" height="70" rx="10" transform="rotate(4 569 547)"/>
+      <rect x="600" y="514" width="50" height="70" rx="10"/>
+      <rect x="652" y="513" width="52" height="70" rx="10" transform="rotate(-3 678 548)"/>
+      <rect x="710" y="518" width="56" height="70" rx="10"/>
+    </g>
+    <path d="M200 430 Q600 660 1000 430 L1000 700 L200 700 Z" fill="#160709" opacity=".35"/>
 
-    <!-- upper arch: crowded, uneven, one worn edge, one diastema -->
-    <g fill="url(#toothB)">
-      <rect x="213" y="360" width="72" height="69"  rx="11"/>
-      <rect x="291" y="360" width="72" height="97"  rx="11" transform="rotate(-3.5 327 457)"/>
-      <rect x="369" y="360" width="72" height="100" rx="11"/>
-      <rect x="447" y="360" width="72" height="132" rx="11"/>
-      <rect x="518" y="360" width="72" height="139" rx="11"/>
-      <rect x="612" y="360" width="72" height="139" rx="11"/>
-      <rect x="688" y="360" width="72" height="132" rx="11" transform="rotate(4 724 492)"/>
-      <rect x="759" y="360" width="72" height="118" rx="11"/>
-      <rect x="837" y="360" width="72" height="97"  rx="11"/>
-      <rect x="915" y="360" width="72" height="69"  rx="11"/>
+    <!-- inflamed, slightly receded gum -->
+    <rect x="150" y="240" width="900" height="152" fill="url(#gumB)"/>
+
+    <!-- ===== upper arch: crowded, rotated, worn ===== -->
+    <g stroke="#8E7C4E" stroke-width="1.4" stroke-opacity=".8">
+      <rect x="258" y="382" width="32" height="66"  rx="7" fill="url(#enamelBackB)"/>
+      <rect x="292" y="374" width="40" height="88"  rx="8" fill="url(#enamelBackB)" transform="rotate(-4 312 418)"/>
+      <!-- first premolar pushed forward and tipped: the classic crowding sign -->
+      <rect x="338" y="372" width="50" height="104" rx="9" fill="url(#enamelBackB)" transform="rotate(6 363 424)"/>
+      <rect x="816" y="368" width="50" height="106" rx="9" fill="url(#enamelBackB)"/>
+      <rect x="868" y="374" width="40" height="88"  rx="8" fill="url(#enamelBackB)" transform="rotate(3 888 418)"/>
+      <rect x="910" y="382" width="32" height="66"  rx="7" fill="url(#enamelBackB)"/>
+
+      <!-- canines: the right one tipped and standing proud -->
+      <path d="M388 366 C388 358 395 356 402 356 L432 356 C439 356 446 358 446 366 L444 456 C444 478 428 494 417 494 C406 494 388 478 388 456 Z" fill="url(#enamelB)"/>
+      <path d="M756 366 C756 358 763 356 770 356 L800 356 C807 356 814 358 814 366 L812 458 C812 480 796 498 785 498 C774 498 756 480 756 458 Z" fill="url(#enamelB)" transform="rotate(7 785 427)"/>
+
+      <!-- lateral incisors: left one rotated and short, right one non-vital and grey -->
+      <path d="M448 368 C448 361 454 360 461 360 L500 360 C507 360 512 361 512 368 L511 462 C511 471 504 474 496 474 L464 474 C456 474 449 471 449 462 Z" fill="url(#enamelB)" transform="rotate(-8 480 417)"/>
+      <path d="M688 368 C688 361 694 360 701 360 L740 360 C747 360 752 361 752 368 L751 474 C751 483 744 486 736 486 L704 486 C696 486 689 483 689 474 Z" fill="#A9A08A"/>
+
+      <!-- central incisors: separated by a diastema, right one chipped -->
+      <path d="M509 358 C509 351 516 350 524 350 L581 350 C589 350 593 351 593 358 L592 486 C592 496 584 500 573 500 L529 500 C518 500 510 496 510 486 Z" fill="url(#enamelB)"/>
+      <path d="M607 358 C607 351 614 350 622 350 L679 350 C687 350 691 351 691 358 L690 486 C690 496 682 500 671 500 L644 500 L636 482 L621 490 C612 490 608 487 608 478 Z" fill="url(#enamelB)"/>
     </g>
 
-    <!-- staining that pools at the gum line -->
-    <g fill="url(#stainB)">
-      <rect x="213" y="360" width="72" height="69"  rx="11"/>
-      <rect x="291" y="360" width="72" height="97"  rx="11"/>
-      <rect x="369" y="360" width="72" height="100" rx="11"/>
-      <rect x="447" y="360" width="72" height="132" rx="11"/>
-      <rect x="518" y="360" width="72" height="139" rx="11"/>
-      <rect x="612" y="360" width="72" height="139" rx="11"/>
-      <rect x="688" y="360" width="72" height="132" rx="11"/>
-      <rect x="759" y="360" width="72" height="118" rx="11"/>
-      <rect x="837" y="360" width="72" height="97"  rx="11"/>
-      <rect x="915" y="360" width="72" height="69"  rx="11"/>
+    <!-- tartar and stain pooling along the gum margin -->
+    <rect x="150" y="350" width="900" height="58" fill="url(#tartarB)"/>
+    <rect x="150" y="348" width="900" height="14" fill="#3A1218" opacity=".3"/>
+
+    <!-- interproximal shadowing: crowded contacts trap darkness -->
+    <g fill="#4A3A18" opacity=".33">
+      <rect x="446" y="360" width="5" height="112"/>
+      <rect x="510" y="352" width="5" height="132"/>
+      <rect x="592" y="352" width="16" height="146"/>
+      <rect x="686" y="358" width="5" height="126"/>
+      <rect x="752" y="358" width="6" height="130"/>
     </g>
 
-    <!-- lower arch -->
-    <g fill="#B4A170" opacity=".9">
-      <rect x="343" y="470" width="60" height="90" rx="9" transform="rotate(-4 373 515)"/>
-      <rect x="408" y="472" width="60" height="90" rx="9"/>
-      <rect x="473" y="468" width="60" height="90" rx="9"/>
-      <rect x="538" y="470" width="60" height="90" rx="9" transform="rotate(3 568 515)"/>
-      <rect x="603" y="468" width="60" height="90" rx="9"/>
-      <rect x="668" y="472" width="60" height="90" rx="9"/>
-      <rect x="733" y="470" width="60" height="90" rx="9"/>
-      <rect x="798" y="474" width="60" height="90" rx="9"/>
-    </g>
-
-    <!-- corner shadows -->
-    <ellipse cx="200" cy="400" rx="70" ry="120" fill="#000" opacity=".55"/>
-    <ellipse cx="1000" cy="400" rx="70" ry="120" fill="#000" opacity=".55"/>
+    <ellipse cx="215" cy="430" rx="95" ry="140" fill="#0B0406" opacity=".75"/>
+    <ellipse cx="985" cy="430" rx="95" ry="140" fill="#0B0406" opacity=".75"/>
   </g>
 
-  <!-- lip outline -->
-  <path d="M170 400 Q600 290 1030 400 Q600 610 170 400 Z" fill="none" stroke="#D4AF37" stroke-opacity=".28" stroke-width="2"/>
+  <path d="M200 430 Q600 242 1000 430 Q600 660 200 430 Z" fill="none" stroke="#D4AF37" stroke-opacity=".22" stroke-width="1.5"/>
 </svg>

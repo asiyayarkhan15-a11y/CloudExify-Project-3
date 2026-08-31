@@ -46,9 +46,11 @@ Category buttons filter the six treatment cards. Cards carry space-separated cat
 and Cosmetic. Hidden cards animate out via opacity and scale rather than snapping away.
 
 ### 3. Before & after draggable slider
-A clipped overlay pane with a gold divider. Supports mouse drag, touch drag, hover-to-peek,
-and left/right arrow keys, with `role="slider"` and a live `aria-valuenow`. The clipped copy is
-sized by height rather than width so both halves stay pixel-aligned at any viewport size.
+A clipped overlay pane with a gold divider. Supports mouse drag, touch drag and left/right
+arrow keys, with `role="slider"` and a live `aria-valuenow`. Touch drags only claim the gesture
+once the movement is clearly horizontal, so a vertical swipe over the slider still scrolls the
+page. The clipped copy is sized by height rather than width so both halves stay pixel-aligned at
+any viewport size.
 
 ### 4. Appointment booking modal
 Twelve time slots rendered as a selectable grid (three shown as already booked), a date picker
@@ -97,6 +99,7 @@ dental-clinic/
 │   ├── case-whitening.svg
 │   ├── case-aligners.svg
 │   └── case-implant.svg
+├── screenshot/            (10 desktop + mobile captures)
 ├── vercel.json
 └── README.md
 ```
@@ -105,9 +108,20 @@ dental-clinic/
 
 ## Screenshots
 
-| Desktop | Mobile |
+### Desktop
+
+| | |
 |---|---|
-| ![Desktop view](assets/screenshots/desktop.png) | ![Mobile view](assets/screenshots/mobile.png) |
+| ![Hero section](screenshot/home.png) | ![Animated stats counter](screenshot/home2.png) |
+| ![Services grid with live filter](screenshot/treatment.png) | ![About and doctor profile](screenshot/about.png) |
+| ![Annual care plans](screenshot/pricing.png) | ![Patient testimonials](screenshot/reviews.png) |
+| ![Contact section and map](screenshot/contact.png) | ![Appointment booking modal](screenshot/appointment.png) |
+
+### Mobile
+
+| | |
+|---|---|
+| ![Booking modal on mobile](screenshot/mobile.appointment.png) | ![Pricing plans on mobile](screenshot/mobile.pricing.png) |
 
 ---
 
@@ -124,7 +138,7 @@ python -m http.server 8000
 
 ## Deploying to Vercel
 
-1. Push this folder to a GitHub repo named `cloudexify-web-p3-yourname`
+1. Push this folder to a GitHub repo (this one: `CloudExify-Project-3`)
 2. On [vercel.com](https://vercel.com), **Add New Project** → import the repo
 3. Framework preset: **Other**. Leave build command and output directory empty
 4. **Deploy** — you get a live `.vercel.app` URL in well under a minute

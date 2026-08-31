@@ -1,82 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Stylised illustration of the same smile after treatment: even, bright teeth">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Close-up illustration of a smile after treatment: even, symmetrical, naturally bright teeth">
   <defs>
     <linearGradient id="bgA" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#151A21"/>
-      <stop offset="1" stop-color="#0A0C0F"/>
+      <stop offset="0" stop-color="#161B22"/><stop offset="1" stop-color="#090B0E"/>
     </linearGradient>
-    <radialGradient id="glowA" cx="50%" cy="46%" r="52%">
-      <stop offset="0" stop-color="#D4AF37" stop-opacity=".2"/>
+    <radialGradient id="glowA" cx="50%" cy="48%" r="55%">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity=".17"/>
       <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="toothA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0"   stop-color="#EFEDE6"/>
-      <stop offset=".4"  stop-color="#FBFAF6"/>
-      <stop offset="1"   stop-color="#FFFFFF"/>
+
+    <!-- enamel: warm at the gum, bright in the body, translucent at the biting edge -->
+    <linearGradient id="enamelA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#E8E0D2"/>
+      <stop offset=".22" stop-color="#FBF9F4"/>
+      <stop offset=".72" stop-color="#FFFFFF"/>
+      <stop offset=".93" stop-color="#F2F4F5"/>
+      <stop offset="1"   stop-color="#DCE4EA"/>
     </linearGradient>
-    <linearGradient id="glossA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0"   stop-color="#FFFFFF" stop-opacity=".85"/>
-      <stop offset="1"   stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="enamelBackA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#C9C3B6"/>
+      <stop offset=".4"  stop-color="#E4E0D6"/>
+      <stop offset="1"   stop-color="#EDEAE2"/>
     </linearGradient>
+    <linearGradient id="gumA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7E4149"/><stop offset="1" stop-color="#B2666F"/>
+    </linearGradient>
+    <linearGradient id="lipA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A555C"/><stop offset=".55" stop-color="#6E4048"/><stop offset="1" stop-color="#5A333A"/>
+    </linearGradient>
+    <linearGradient id="lowLipA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5E363D"/><stop offset=".4" stop-color="#8D585F"/><stop offset="1" stop-color="#6B3F46"/>
+    </linearGradient>
+    <radialGradient id="throatA" cx="50%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#3A1218"/><stop offset="1" stop-color="#160709"/>
+    </radialGradient>
+
     <clipPath id="mouthA">
-      <path d="M170 400 Q600 290 1030 400 Q600 610 170 400 Z"/>
+      <path d="M200 430 Q600 242 1000 430 Q600 660 200 430 Z"/>
     </clipPath>
   </defs>
 
   <rect width="1200" height="800" fill="url(#bgA)"/>
   <rect width="1200" height="800" fill="url(#glowA)"/>
 
+  <!-- ===== lips ===== -->
+  <path d="M170 428 C280 340 400 285 520 282 C555 281 578 262 600 262 C622 262 645 281 680 282 C800 285 920 340 1030 428 L1000 430 Q600 242 200 430 Z" fill="url(#lipA)"/>
+  <path d="M1000 430 Q600 660 200 430 C260 560 400 700 600 700 C800 700 940 560 1000 430 Z" fill="url(#lowLipA)"/>
+
   <g clip-path="url(#mouthA)">
-    <!-- mouth interior -->
-    <rect x="150" y="270" width="900" height="360" fill="#200E12"/>
+    <!-- oral cavity -->
+    <rect x="150" y="240" width="900" height="440" fill="url(#throatA)"/>
 
-    <!-- healthy, re-contoured gum line -->
-    <path d="M170 400 Q600 290 1030 400 L1030 434 Q600 324 170 434 Z" fill="#A85F68"/>
+    <!-- lower arch, drawn FIRST so the upper teeth sit in front of it -->
+    <g fill="#CFCCC3" opacity=".8">
+      <rect x="430" y="516" width="56" height="70" rx="10"/>
+      <rect x="490" y="513" width="52" height="70" rx="10"/>
+      <rect x="546" y="512" width="50" height="70" rx="10"/>
+      <rect x="600" y="512" width="50" height="70" rx="10"/>
+      <rect x="654" y="513" width="52" height="70" rx="10"/>
+      <rect x="710" y="516" width="56" height="70" rx="10"/>
+    </g>
+    <path d="M200 430 Q600 660 1000 430 L1000 700 L200 700 Z" fill="#160709" opacity=".35"/>
 
-    <!-- upper arch: even spacing, symmetrical arch, matched edges -->
-    <g fill="url(#toothA)">
-      <rect x="213" y="360" width="72" height="69"  rx="11"/>
-      <rect x="291" y="360" width="72" height="97"  rx="11"/>
-      <rect x="369" y="360" width="72" height="118" rx="11"/>
-      <rect x="447" y="360" width="72" height="132" rx="11"/>
-      <rect x="525" y="360" width="72" height="139" rx="11"/>
-      <rect x="603" y="360" width="72" height="139" rx="11"/>
-      <rect x="681" y="360" width="72" height="132" rx="11"/>
-      <rect x="759" y="360" width="72" height="118" rx="11"/>
-      <rect x="837" y="360" width="72" height="97"  rx="11"/>
-      <rect x="915" y="360" width="72" height="69"  rx="11"/>
+    <!-- gum, scalloped by the tooth tops that overlay it -->
+    <rect x="150" y="240" width="900" height="158" fill="url(#gumA)"/>
+
+    <!-- ===== upper arch ===== -->
+    <g stroke="#CFC9BC" stroke-width="1.4" stroke-opacity=".85">
+      <!-- back teeth, cooler and duller for depth -->
+      <rect x="258" y="380" width="32" height="68"  rx="7" fill="url(#enamelBackA)"/>
+      <rect x="292" y="372" width="40" height="90"  rx="8" fill="url(#enamelBackA)"/>
+      <rect x="334" y="366" width="50" height="110" rx="9" fill="url(#enamelBackA)"/>
+      <rect x="816" y="366" width="50" height="110" rx="9" fill="url(#enamelBackA)"/>
+      <rect x="868" y="372" width="40" height="90"  rx="8" fill="url(#enamelBackA)"/>
+      <rect x="910" y="380" width="32" height="68"  rx="7" fill="url(#enamelBackA)"/>
+
+      <!-- canines: pointed cusp -->
+      <path d="M388 366 C388 358 395 356 402 356 L432 356 C439 356 446 358 446 366 L444 456 C444 478 428 494 417 494 C406 494 388 478 388 456 Z" fill="url(#enamelA)"/>
+      <path d="M756 366 C756 358 763 356 770 356 L800 356 C807 356 814 358 814 366 L812 456 C812 478 796 494 785 494 C774 494 756 478 756 456 Z" fill="url(#enamelA)"/>
+
+      <!-- lateral incisors -->
+      <path d="M448 368 C448 361 454 360 461 360 L500 360 C507 360 512 361 512 368 L511 474 C511 483 504 486 496 486 L464 486 C456 486 449 483 449 474 Z" fill="url(#enamelA)"/>
+      <path d="M688 368 C688 361 694 360 701 360 L740 360 C747 360 752 361 752 368 L751 474 C751 483 744 486 736 486 L704 486 C696 486 689 483 689 474 Z" fill="url(#enamelA)"/>
+
+      <!-- central incisors: the widest, longest, and squarest -->
+      <path d="M514 358 C514 351 521 350 529 350 L586 350 C594 350 598 351 598 358 L597 486 C597 496 589 500 578 500 L534 500 C523 500 515 496 515 486 Z" fill="url(#enamelA)"/>
+      <path d="M602 358 C602 351 609 350 617 350 L674 350 C682 350 686 351 686 358 L685 486 C685 496 677 500 666 500 L622 500 C611 500 603 496 603 486 Z" fill="url(#enamelA)"/>
     </g>
 
-    <!-- specular highlight band across the porcelain -->
-    <g fill="url(#glossA)" opacity=".5">
-      <rect x="228" y="372" width="42" height="34" rx="8"/>
-      <rect x="306" y="372" width="42" height="46" rx="8"/>
-      <rect x="384" y="372" width="42" height="58" rx="8"/>
-      <rect x="462" y="372" width="42" height="66" rx="8"/>
-      <rect x="540" y="372" width="42" height="72" rx="8"/>
-      <rect x="618" y="372" width="42" height="72" rx="8"/>
-      <rect x="696" y="372" width="42" height="66" rx="8"/>
-      <rect x="774" y="372" width="42" height="58" rx="8"/>
-      <rect x="852" y="372" width="42" height="46" rx="8"/>
-      <rect x="930" y="372" width="42" height="34" rx="8"/>
+    <!-- shadow where the teeth meet the gum -->
+    <rect x="150" y="350" width="900" height="16" fill="#3A1218" opacity=".22"/>
+
+    <!-- specular highlights -->
+    <g fill="#FFFFFF" opacity=".5">
+      <ellipse cx="540" cy="392" rx="12" ry="26"/>
+      <ellipse cx="628" cy="392" rx="12" ry="26"/>
+      <ellipse cx="466" cy="398" rx="8"  ry="18"/>
+      <ellipse cx="706" cy="398" rx="8"  ry="18"/>
+      <ellipse cx="404" cy="396" rx="7"  ry="15"/>
+      <ellipse cx="772" cy="396" rx="7"  ry="15"/>
     </g>
 
-    <!-- lower arch, aligned -->
-    <g fill="#F2F0EA" opacity=".92">
-      <rect x="343" y="470" width="60" height="90" rx="9"/>
-      <rect x="408" y="470" width="60" height="90" rx="9"/>
-      <rect x="473" y="468" width="60" height="90" rx="9"/>
-      <rect x="538" y="468" width="60" height="90" rx="9"/>
-      <rect x="603" y="468" width="60" height="90" rx="9"/>
-      <rect x="668" y="468" width="60" height="90" rx="9"/>
-      <rect x="733" y="470" width="60" height="90" rx="9"/>
-      <rect x="798" y="470" width="60" height="90" rx="9"/>
-    </g>
-
-    <!-- corner shadows -->
-    <ellipse cx="200" cy="400" rx="70" ry="120" fill="#000" opacity=".5"/>
-    <ellipse cx="1000" cy="400" rx="70" ry="120" fill="#000" opacity=".5"/>
+    <!-- corner falloff -->
+    <ellipse cx="215" cy="430" rx="95" ry="140" fill="#0B0406" opacity=".72"/>
+    <ellipse cx="985" cy="430" rx="95" ry="140" fill="#0B0406" opacity=".72"/>
   </g>
 
-  <!-- lip outline -->
-  <path d="M170 400 Q600 290 1030 400 Q600 610 170 400 Z" fill="none" stroke="#D4AF37" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M200 430 Q600 242 1000 430 Q600 660 200 430 Z" fill="none" stroke="#D4AF37" stroke-opacity=".3" stroke-width="1.5"/>
 </svg>
