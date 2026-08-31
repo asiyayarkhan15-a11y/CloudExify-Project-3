@@ -99,7 +99,7 @@ dental-clinic/
 │   ├── case-whitening.svg
 │   ├── case-aligners.svg
 │   └── case-implant.svg
-├── screenshot/            (10 desktop + mobile captures)
+├── screenshot/            (8 desktop + 6 mobile captures)
 ├── vercel.json
 └── README.md
 ```
@@ -119,8 +119,13 @@ dental-clinic/
 
 ### Mobile
 
+The first four were shot on a real iPhone against the live Vercel deployment — the browser URL
+bar is visible in each. The last two are the booking modal and pricing plans at device width.
+
 | | |
 |---|---|
+| ![Availability card and animated stats on mobile](screenshot/mobile.home.jpg) | ![Services grid on mobile](screenshot/mobile.services.jpg) |
+| ![Patient testimonials on mobile](screenshot/mobile.reviews.jpg) | ![Contact details and hours on mobile](screenshot/mobile.contact.jpg) |
 | ![Booking modal on mobile](screenshot/mobile.appointment.png) | ![Pricing plans on mobile](screenshot/mobile.pricing.png) |
 
 ---
